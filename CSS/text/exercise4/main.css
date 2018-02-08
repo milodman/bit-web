@@ -1,0 +1,15 @@
+.jedan {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: left;
+}
+.dva {
+    text-transform: lowercase;
+    text-decoration: line-through ;
+    text-align: right;
+    font-size: 35px;
+}
+
+.three {
+    text-align: center
+}
