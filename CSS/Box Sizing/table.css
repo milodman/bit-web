@@ -1,0 +1,30 @@
+table {
+    margin:auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#first-row {
+    background-color: #92000b;
+}
+
+img {
+    height: 100px;
+}
+
+.second-forth {
+    background-color: #d5d5d5;
+}
+
+table > tbody > tr:hover{
+    background-color: #ffffad;
+    cursor: pointer
+}
+
+th {
+    color: #fefefe;
+}
+
+td, th {
+    padding: 10px;
+}

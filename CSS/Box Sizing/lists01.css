@@ -1,0 +1,24 @@
+#list-one {
+    list-style-type: circle;
+}
+
+#list-two {
+    list-style-type: square;
+}
+
+#list-three {
+    list-style-type: upper-alpha;
+}
+
+#list-four {
+    list-style-type: upper-roman;
+}
+.list-img {
+    display: inline-block;
+    width:200px;
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+}
+.second {
+    list-style-position: inside;
+}
+
