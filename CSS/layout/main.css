@@ -1,0 +1,29 @@
+.placeholder {
+    margin: 150px;
+}
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+.slika1 {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin-bottom: 50px;
+}
+.slika2 {
+    position: absolute;
+    top: 15px;
+    right:10px;
+}
+.slika3 {
+    position:absolute;
+    bottom:10px;
+    left:36%;
+}
+.slika4 {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+
+}

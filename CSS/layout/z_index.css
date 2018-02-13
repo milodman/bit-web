@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+}
+div {
+    width: 200px;
+    height: 200px;
+}
+.first {
+    background: rgb(228, 192, 192);
+}
+.second {
+    background: rgb(129, 129, 86);
+}
+.third {
+    background: rgb(12, 12, 90);
+}
+
+
+.relative2 {
+    position: relative;
+    bottom:100px;
+   left:100px;
+}
+.relative3 {
+    position: relative;
+    bottom: 200px;
+    left:200px;
+}
+
+
+.box{
+    position: relative;
+    width: 100%;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+}
+.right2{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    z-index: 1;
+}
+.right3{
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    z-index: 0;
+}
+
