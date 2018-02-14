@@ -5,7 +5,7 @@
     color:white;
     margin:0 auto;
 }
-ul > li {
+.header-li {
     float:right;
     list-style: none;
     margin:15px 10px; 
@@ -18,6 +18,7 @@ ul > li {
 .main{
     width: 960px;
     margin:5px auto;
+    overflow:auto;
 }
 .blok{
     background: rgb(219, 200, 27);
@@ -28,4 +29,47 @@ ul > li {
 
 span{
     width: 100%;
+}
+
+.content-ul {
+    background-color: #e99b00;
+    display: inline-block;
+    padding: 10px 5px;
+    float:right;
+    margin-left: 15px;
+    width:30%;
+    margin-top:0;
+}
+
+.content-li {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid grey;
+}
+
+.main-divs {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin: 0 15px;
+
+}
+
+#main-div {
+    clear: left;
+}
+footer {
+    width: 100%; 
+    background-color: #37755a;
+    padding: 0 26%;
+    
+}
+h6 {
+    color:white;
+    display:inline-block;
+    font-size: 14px;
+}
+.copyright {
+    color:white;
+    font-size:15px;
 }
