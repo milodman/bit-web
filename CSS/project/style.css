@@ -14,6 +14,7 @@
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
+/*+++++++++++++++++HEADER++++++++++*/
 
 header {
     background-image: url(./images/banner3.jpg);
@@ -41,6 +42,8 @@ header>a {
     padding: 1%;
     margin: 50px auto;
 }
+/*==========HEADER TABLET===============/*
+/*==========NAVIGATION==========*/
 
 nav {
     width: 90%;
@@ -82,6 +85,37 @@ nav>ul>li>a {
     color: white;
     display: block;
 }
+/*=========navigation tablet===============*/
+
+@media (min-width:768px ){
+
+nav>h1{
+   position: absolute;
+   left:-4%;
+   margin: 0;
+    
+}
+nav>h1>span.grey{
+    color: white;
+} 
+nav{
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    
+}
+nav>ul{
+float: right;
+background: none;
+}
+nav>ul>li{
+    display: inline-block;
+    margin-top:1%;
+}
+
+
+}
+/*============main section=============*/
 
 main {
     width: 90%;
@@ -132,3 +166,22 @@ main>section>img {
     margin-top: 5%;
     margin-bottom: 5%;
 }
+/***********************tablet***************/
+
+@media (min-width:768px){
+main>section>article{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+main>section>img{
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+    
+
+}
+
+
+
