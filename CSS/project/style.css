@@ -14,7 +14,7 @@
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
-/*+++++++++++++++++HEADER++++++++++*/
+/*=========HEADER==========*/
 
 header {
     background-image: url(./images/banner3.jpg);
@@ -28,6 +28,7 @@ header>h2 {
     color: white;
     text-align: center;
     margin-top: 5%;
+    text-decoration: none;
 }
 
 header>a {
@@ -86,13 +87,12 @@ nav>ul>li>a {
     display: block;
 }
 /*=========navigation tablet===============*/
-
 @media (min-width:768px ){
 
 nav>h1{
    position: absolute;
-   left:-4%;
    margin: 0;
+   left:-5%;
     
 }
 nav>h1>span.grey{
@@ -100,9 +100,8 @@ nav>h1>span.grey{
 } 
 nav{
     position: absolute;
-    right: 3%;
-    top: 5%;
-    
+    top: 4.5%;
+    right: 2%;
 }
 nav>ul{
 float: right;
@@ -110,7 +109,7 @@ background: none;
 }
 nav>ul>li{
     display: inline-block;
-    margin-top:1%;
+    margin-top:0.7%;
 }
 
 
@@ -166,8 +165,7 @@ main>section>img {
     margin-top: 5%;
     margin-bottom: 5%;
 }
-/***********************tablet***************/
-
+/*==========TABLET MAIN SECTION====================*/
 @media (min-width:768px){
 main>section>article{
     width: 50%;
@@ -182,22 +180,203 @@ main>section>img{
     
 
 }
- 
-/******************desktop***************/
-@media (min-width:1200px){
 
-main {
+}
+
+/*==============DESKTOP MAIN====================*/
+@media (min-width:1000px){
+main{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+main>section>article{
+    width: 31.3%;
+    
+}
+
+main>section>img{
+    width:33.3%;
+   margin:0 1% 0 1%;
+   height:320px;
+}
+
+
+
+}
+
+.twitter {
     width:85%;
-    margin:0 auto;
-    margin-top: 0;
+    margin:5% auto;
 }
-main>section>article {
-    width:30%;
+.twitter>h2 {
+    text-decoration: underline;
+    margin: 0 auto 5%;
+    text-align: center;
 }
-main>section>img {
-    width:32%;
-    margin:0 1% 0 1%;
-    height:320px;
+.twitter>.box {
+    width:100%;
+    margin:2% auto;
+   background:lightblue;
+   position: relative;
+   min-height: 200px;
 }
+.twitter>.box>img {
+    width:20%;
+    border-radius:50%;
+    position:absolute;
+    border:1px solid white;
+    padding:2px;
+    left:2%;
+    top:10%;
+    margin-left: 3%;
+    margin-top: 2%;
 }
+.twitter>.box>h3 {
+    position:absolute;
+    top:16%;
+    left:30%;
+}
+.twitter>.box>.star {
+    position:absolute;
+    color:white;
+    top:26%;
+    left:30%;
+    margin-top:2%;
+}
+.twitter>.box>p {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    color: white;
+    line-height: 1.1em;
+    text-align: justify;
+    padding: 2%;
+    width:70%
+}
+h2 {
+    text-decoration: underline;
+    margin:9% auto 9%;
+    text-align: center;
+    
+}
+address {
+    width:100%;
+}
+address>.contact {
+    background: rgb(41, 212, 155);
+    min-height: 150px;
+}
+address>.contact>h3 {
+    color: white;
+    text-align: center;
+    margin:5% auto 3%;
+    padding-top:8px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+address>.contact>p {
+    color: white;
+    text-align: center;
+    margin:0 auto ;
+    padding:2%;
+    text-decoration: none;
+}
+address>.connect {
+    background: rgb(212, 75, 150);
+    min-height: 120px;
+}
+address>.connect>h3 {
+    color: white;
+    text-align: center;
+    margin: auto 3%;
+    padding-top:8px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+address>.connect>p {
+    color: white;
+    text-align: center;
+    margin-right:0 auto ;
+    padding:5%;   
+}
+address>.addresal {
+    background:  rgb(85, 85, 207);
+    min-height:100px;
 
+}
+address>.addresal>h3 {
+    color: white;
+    text-align: center;
+    margin: auto 3%;
+    padding-top:8px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+address>.addresal>p {
+    color: white;
+    text-align:center;
+    margin-right:0 auto ;
+    padding:5%;   
+    font-size: 0.66rem;
+}
+address>.house {
+    background: lightblue;
+    min-height: 180px;
+}
+address>.house>img {
+   
+    display: block;
+    margin: 0 auto;
+}
+iframe {
+    width:100%;
+}
+form{
+    margin-bottom:60px; 
+}
+input,
+textarea {
+    display: block;
+    width: 90%;
+    padding: 4%;
+    margin: 2% auto;
+}
+form button {
+    width: 25%;
+    padding: 2% 0;
+    background-color: rgb(255, 153, 0);
+    border-radius: 10px;
+    border: none;
+    float: left;
+    margin-left: 5%;
+    color: white;
+}
+footer{
+    background: black;
+    color: #fff;
+    min-height: 150px;
+    width: 100%;
+    font-size: 13px;
+}
+footer > ul {
+  padding: 50px 0 20px;
+  text-align: center;
+  width: 90%;
+}
+footer > ul > li {
+    display: inline;
+    text-align: center;
+    color: white;
+    margin-right: 5px;
+    
+}
+footer > ul > li> a{
+    color: #fff;
+    text-decoration: none;
+}
+footer > p{
+    text-align: center;
+    padding-bottom: 30px;
+}
