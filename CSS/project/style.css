@@ -170,16 +170,12 @@ main>section>img {
 main>section>article{
     width: 48%;
     display: inline-block;
-    vertical-align: top;
-    
+    vertical-align: top;   
 }
 main>section>img{
     width: 48%;
     display: inline-block;
     margin: 0;
-    
-
-}
 
 }
 
@@ -205,7 +201,7 @@ main>section>img{
 
 
 }
-
+/**************twitter***********/
 .twitter {
     width:85%;
     margin:5% auto;
@@ -235,19 +231,19 @@ main>section>img{
 }
 .twitter>.box>h3 {
     position:absolute;
-    top:16%;
+    top:23%;
     left:30%;
 }
 .twitter>.box>.star {
     position:absolute;
     color:white;
-    top:26%;
+    top:30%;
     left:30%;
     margin-top:2%;
 }
 .twitter>.box>p {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 25%;
     color: white;
     line-height: 1.1em;
@@ -261,6 +257,43 @@ h2 {
     text-align: center;
     
 }
+/*********twitter tablet**************/
+@media (min-width:768px){ 
+.twitter>.box {
+width: 47%;
+display: inline-block;
+margin:1% 1%;
+}    
+.twitter>.box>h3 {
+    position:absolute;
+    top:14%;
+    left:30%;
+}
+.twitter>.box>.star{
+    top:25%;
+}
+
+.twitter>.box>p {
+    bottm:3%;
+}
+}
+/***********twitter desktop********/
+@media (min-width:1000px){ 
+.twitter>.box {
+width: 30%;
+display: inline-block;
+margin:1% 1%;
+}    
+.twitter>.box>img {
+    top:10%;
+}
+.twitter>.box>h3 {
+    top:8%;
+}
+.twitter>.box>.star{
+    top:17%;
+}
+/************address*****************/
 address {
     width:100%;
 }
@@ -271,7 +304,6 @@ address>.contact {
 address>.contact>h3 {
     color: white;
     text-align: center;
-    margin:5% auto 3%;
     padding-top:8px;
     padding-bottom: 5px;
     text-decoration: none;
@@ -285,12 +317,11 @@ address>.contact>p {
 }
 address>.connect {
     background: rgb(214, 45, 138);
-    min-height: 120px;
+    min-height: 150px;
 }
 address>.connect>h3 {
     color: white;
     text-align: center;
-    margin: auto 3%;
     padding-top:8px;
     padding-bottom: 5px;
     text-decoration: none;
@@ -303,13 +334,12 @@ address>.connect>p {
 }
 address>.addresal {
     background:  rgb(69, 69, 204);
-    min-height:100px;
+    min-height:150px;
 
 }
 address>.addresal>h3 {
     color: white;
     text-align: center;
-    margin: auto 3%;
     padding-top:8px;
     padding-bottom: 5px;
     text-decoration: none;
@@ -323,7 +353,7 @@ address>.addresal>p {
 }
 address>.house {
     background: lightblue;
-    min-height: 120px;
+    min-height: 150px;
 }
 address>.house>img {
    
@@ -334,8 +364,62 @@ address>.house>img {
 iframe {
     width:100%;
 }
+/**********address-tablet*********/
+@media (min-width:768px){ 
+address>.contact{
+    width:50%;
+    display:inline-block;
+    height:150px;
+}
+address>.connect{
+    width: 50%;
+    display: inline-block;
+    float:right;
+    height:150px;
+}
+address>.addresal{
+width:50%;
+display:inline-block;
+height:150px;
+}
+address>.house {
+    width:50%;
+    display:inline-block;
+    height:150px;
+    float: right;
+}
+address>.house>img {
+   
+    display: block;
+    margin: 0 auto;
+    height:90%;
+}
+}
+/**********address-desktop*********/
+@media (min-width:1000px){
+address>.contact{
+    width:25%;
+    display:inline-block;
+    float:left;
+    }
+address>.connect{
+    width: 25%;
+    display:inline-block;
+    float:left;   
+}
+address>.addresal{
+    width:25%;
+    display:inline-block;
+
+}
+address>.house {
+    width:25%;
+    display:inline-block;
+}
+}
+/********form*********/
 form{
-    margin-bottom:80px; 
+    margin:0 auto 80px; 
 }
 input,
 textarea {
@@ -353,7 +437,15 @@ form button {
     float: left;
     margin-left: 5%;
     color: white;
+    margin-bottom: 30%;
 }
+/*********form-tablet*****/
+@media (min-width:768px){
+form{
+width:80%;
+}
+}
+/**********footer**************/
 footer{
     background: black;
     color: #fff;
@@ -380,3 +472,4 @@ footer > p{
     text-align: center;
     padding-bottom: 20px;
 }
+/*********
