@@ -1,13 +1,6 @@
-$backgroundColor:green;
-$ImgWidth:200px;
-$backgrndClr:yellow;
-$colorThead:red;
-$fontFooter:monospace;
-body{
-
-}
-
-
+@import "variables";
+@import "mixins";
+ 
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +9,7 @@ body {
 }
 
 .container {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -25,14 +18,16 @@ h1 {
     text-align: center;
     background:$backgrndClr;
     color: white;
+    @include text-stil(green,5px ,red );
 }
 
 h2 {
-    margin-bottom: 0px;
-    padding-left: 10px;
+    margin: 0 auto;
     text-align: left;
     background: $colorThead;
     color: white;
+    width:80%;
+    @include text-stil(blue,5px ,white );
 }
 
 img {
@@ -40,29 +35,36 @@ img {
     margin: 40px auto 40px;
     display: block;
     width:$ImgWidth;
+    @include box-stil(15px, 10px,red );
 }
 
 table {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     color: #333;
     background: $backgrndClr;
     border-collapse: collapse;
-}
-
-tr {
-    border-bottom: 1px solid #eee;
-}
-
-td {
-    padding: 5px 0;
-}
-
-td:first-child {
-    width: 300px;
-    padding-left: 10px;
+    @include box-stil(15px, 10px,red );
+    tr {
+        border-bottom: 1px solid #eee;
+        td {
+        
+            padding: 15 0;
+            @include text-stil(white,5px ,red );
+            &:first-child {
+                width: 300px;
+                padding-left: 10px;
+                @include text-stil(black,1px ,white );
+            }
+            
+        }
+  
+    }
 }
 
 p#footer {
     margin-top: 100px;
     font-family: $fontFooter;
+    @include text-stil(white,1px, black );
+    
 }

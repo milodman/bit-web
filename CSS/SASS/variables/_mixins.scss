@@ -1,0 +1,7 @@
+@mixin text-stil($fontcolor, $pix, $shadowcolor){
+    color:$fontcolor;
+    text-shadow:$pix $pix $pix  $shadowcolor;
+ }
+ @mixin box-stil($pixone,$pixtwo, $color) {
+    box-shadow:$pixone $pixtwo $color ;
+}
