@@ -1,5 +1,5 @@
 .select {
-    height: 60px;
+    height: 100px;
     width: 100%;
     background-color: red;
     border-radius: 5px;
@@ -8,6 +8,14 @@
 }
 
 div {
-    padding: 5px;
+    padding: 2px;
 }
 
+.half {
+    height:48px;
+    
+
+}
+.double {
+    height:200px;
+}
