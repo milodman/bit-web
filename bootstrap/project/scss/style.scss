@@ -19,9 +19,19 @@
     background-color: $greenish;
     margin-top: 60px;
 }
+
 .fullwidth3{
     width: 100%;
     margin-top: 60px;
+    @media screen and (min-width:768px) {
+        width:75%;
+        margin:20px auto;
+        
+    }
+    @media screen and (min-width:992px){
+        width:55%;
+        margin:0 auto;
+    }
 }
 
 .navbar {
@@ -52,7 +62,8 @@
         margin: 30px auto;
     }
     h1 {
-        font-size: 1.7em;
+        font-size: 1.9em;
+        font-weight: 800;
     }
     p {
         font-size: 1.2em;
@@ -82,7 +93,7 @@
     h2 {
         margin: 50px 0px 20px 0px;
         font-size: 2em;
-        font-weight: 900;
+        font-weight: 800;
     }
     .separator {
         height: 2px;
@@ -99,7 +110,7 @@
     h2 {
         margin: 50px 0px 10px 0px;
         font-size: 2.2em;
-        font-weight: 900;
+        font-weight: 800;
         color: $colorWhite;
         display: inline-block;
         
@@ -130,7 +141,7 @@
     h2{
         margin: 50px 0px 10px 0px;
         font-size: 2.2em;
-        font-weight: 900;
+        font-weight: 800;
         color: $colorBlack;
         display: inline-block;  
     }
@@ -166,3 +177,18 @@
         margin-left: 10px;
     }
 }
+.footer {
+    background:$blueish;
+    margin-top:50px;
+    color:$colorWhite;
+    a{
+        padding:10px;
+        color:$colorWhite;
+        font-size: 1.2rem;
+    }
+    .bottom {
+        margin-bottom: 0;
+    }
+
+}
+
