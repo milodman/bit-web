@@ -8,7 +8,7 @@ send.onclick = function (event) {
         newText.textContent = input.value;
         div.appendChild(newText);
         input.value = "";
-        console.log(event);
+        
         
     }
 

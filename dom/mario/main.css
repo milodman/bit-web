@@ -1,0 +1,29 @@
+body {
+    padding: 0;
+    margin:0;   
+    background-image: url('bg.jpg');
+    background-repeat:  repeat-x;
+    background-size: cover;
+    width:100%;
+    height:100%; 
+}
+.run {
+    position: absolute;
+    bottom:100px;
+    left:500px;
+    height:200px;
+    
+    
+}
+.stop {
+    position:absolute;
+    bottom:100px;
+    left:500px;
+    height:200px;
+}
+.invisible {
+    display: none;
+}
+.visible {
+    display:block;
+}
