@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .botttombor{
+        border-bottom: 2px solid red;
+    }
+    .up{
+        text-transform: uppercase;
+    }
+    .color {
+        color:green;
+    }
+    .bg {
+        background: red;
+    }
+    </style>
+</head>
+
+<body>
+<ul>
+    <li>11111111111111111111111111</li>
+    <li>milorad mandrapa
+
+    </li>
+    <li>33333333333333333333333333</li>
+    <li class="active">44444444444</li>
+    <li>555555555555555555555</li>
+</ul>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+       $('li:first').addClass('botttombor');
+       $('li').addClass('up');
+       $('li.active').addClass('color');
+       var x = $('li')
+       console.log(x.length);
+       var mid = Math.floor(x.length/2);
+       console.log(mid);
+       
+       
+     $('li:eq(' + mid + ')').addClass('bg');
+
+
+    </script>
+</body>
+
+</html>

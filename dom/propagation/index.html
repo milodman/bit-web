@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bordered {
+            border: 1px solid red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="http://via.placeholder.com/300x150" alt="">
+        <img src="http://via.placeholder.com/250x150" alt="">
+        <img src="http://via.placeholder.com/150x150" alt="">
+        <img src="http://via.placeholder.com/350x150" alt="">
+        <img src="http://via.placeholder.com/250x150" alt="">
+        <img src="http://via.placeholder.com/250x150" alt="">
+
+        <script>
+            var image = document.querySelectorAll('img');
+
+            for (var i = 0; i < image.length; i++) {
+                var picked = image[i];
+
+                picked.addEventListener("click", function (event) {
+                    event.target.classList.add("bordered");
+                    if (event.target.width !== 300) {
+                        event.stopPropagation();
+                        // alert("stop") 
+                    }
+                })
+            };
+
+            document.addEventListener("click", function (e) {
+                console.log(e.target);
+                
+            })
+        </script>
+    </div>
+</body>
+
+</html>
