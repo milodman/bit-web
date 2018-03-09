@@ -1,0 +1,12 @@
+h1 {
+    display:inline-block;
+}
+div {
+    width:90%;
+    background:grey;
+}
+form{
+    display:inline-block;
+    float:right;
+    margin:20px;
+}
